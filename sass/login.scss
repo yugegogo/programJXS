@@ -1,0 +1,244 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,hr,input,td,select,textarea{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+ul,ol{
+	list-style: none;
+}
+img{
+	border:none;
+}
+/*header*/
+.header{
+	width: 1226px;
+	height: 100px;
+	margin: 0 auto;
+}
+.header a{
+	display: inline-block;
+	width: 400px;
+	height: 100px;
+}
+.logo{
+	float: left;
+	width: 86px;
+	height: 58px;
+	margin-top: 20px;
+}
+.header h2{
+	color: black;
+	font-weight: 400;
+	width: 250px;
+	height: 64px;
+	float:left;
+	font-size: 30px;
+	margin-top: 25px;
+	margin-left: 10px;
+	line-height: 30px;
+}
+.header h2 span{
+	display: block;
+	font-size: 12px;
+
+}
+/*banner*/
+.bannerOut{
+	width: 100%;
+	position: relative;	
+}
+.banner{
+	width: 100%;
+	height: 560px;
+	background: url(../img/dengluBanner.jpg) no-repeat center top;
+	display: block;
+	}
+.marginBox{
+	position:absolute;
+	top: 40px;
+	right: 70px; 
+	width: 400px;
+	height: 500px;
+	background: white;
+	font-size: 14px;
+	}
+.marginBox h2{
+	width: 400px;
+	height: 100px;
+	color: black;
+	font-size: 26px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 100px;
+	}
+form{
+	width: 364px;
+	height: 250px;
+	padding-top: 10px;
+	margin:0 38px;
+
+	}
+.marginBox input{
+	width: 298px;
+	height: 20px;
+	line-height: 20px;
+	margin-bottom:16px;
+	color:#333;
+	border: 1px solid #e6e6e6;
+	padding: 12px 10px;
+}
+.yanzheng{
+	position: relative;
+    white-space: nowrap;
+    text-align: left;
+    line-height: 40px;
+    color: #666;
+    width: 300px;
+    height: 22px;
+    line-height: 22px;
+    transform: translate3d(0, 0, 0);
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+    background-image: linear-gradient(180deg, #ffffff 0%,#f3f3f3 100%);
+    padding: 12px 10px;
+    margin-bottom: 16px;
+}
+.yanzheng img{
+	width: 20px;
+    height: auto;
+    vertical-align: sub;
+    float: left;
+    display: inline-block;
+    margin-top: 3px;
+    margin-left: 2px;
+    margin-right: 100px;
+}
+.yanzheng span{
+	float: left;
+}
+#loginButton{
+	width: 325px;
+    height: 42px;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+	text-align: center;
+	color: white;
+	background: linear-gradient(to right, rgba(0,128,255,1) 1%,rgba(2,181,255,1) 100%);
+}
+.denglu{
+	width: 324px;
+	height: 18px;
+	margin-top: 16px;
+	color: #999999;
+	font-size: 12px;
+}
+.denglu p{
+	float: left;
+}
+.denglu a{
+	float: right;
+	color: #999999;
+	font-size: 12px;
+}
+.denglu a:hover{
+	color: #02a0ff;
+}
+.denglu input{
+	width: 12px;
+	height: 12px;
+}
+
+#zhuceNew{
+	margin-top: 20px;
+	width:324px;
+	height: 30px;
+	color: #02a0ff;
+	font-size: 14px;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+}
+
+#otherWay{
+	display: block;
+	width: 325px;
+	height: 40px;
+	line-height: 40px;
+    font-size: 16px;
+    position: relative;
+    margin-top: 10px;
+    color: #8c8d8f;
+    margin: 0 auto;
+    text-align: center;
+}
+#otherWay:before {
+    content: "";
+    width: 90px;
+    display: inline-block;
+    background: #8c8d8f;
+    height: 1px;
+    left: 15px;
+    top: 20px;
+    position: absolute;
+}
+#otherWay:after{
+    content: "";
+    width: 90px;
+    display: inline-block;
+    background: #8c8d8f;
+    height: 1px;
+    right: 15px;
+    top: 20px;
+    position: absolute;
+}
+.qq_wechat{
+	margin-left: 160px;
+}
+.qq_wechat img{
+	width: 28px;
+	height: 28px;
+}
+.qq{
+	margin-right: 10px;
+}
+
+
+/*footer*/
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 46px;
+	padding-bottom:20px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 28px;
+}
+.footer a{
+	padding: 0 6px;
+	color: #919191;
+	font-size: 14px;
+	border-right: 1px solid #919191;
+}
+.footer a:last-child{
+	border-right:none;
+}
+.footer a:hover{
+	color: #545454;
+    font-weight: bold;
+}
+.footer p:last-child{
+	margin-left: 10px;
+	color: #999999;
+	font-size: 14px;
+}
