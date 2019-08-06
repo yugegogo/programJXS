@@ -19,9 +19,35 @@ img{
 		/*headerTop*/
 .headerTop{
 	width:100%;
-	height: 40px;
 	background-color: #333333;
 }
+.beforeHead{
+	display:block;
+	#beforeHeader{
+		width:100%;
+		height:auto;
+		img{
+			width: 100%;
+		    height: auto;
+		    text-align: center;
+			vertical-align:middle;
+			}
+	}	
+	.icon-shanchu{
+			display:inline-block;
+			position: absolute;
+		    right: 10px;
+		    top: 10px;
+		    font-size: 20px;
+		    font-weight: bold;
+		    color: white;
+		    padding: 3px 2px;
+		    text-align: center;
+		    line-height: 22px;
+		    cursor: pointer;
+		}
+}
+
 .headerBar{
 	width:1226px;
 	height: 40px;
@@ -299,11 +325,8 @@ img{
 .bannerList{
 	width: 234px;
 	height:460px;
-	background: black;
-	opacity: 0.4;
 	overflow: hidden;
 	position: absolute;
-
 }
 .bannerList a{
 	color: white;
@@ -313,7 +336,9 @@ img{
 	display: block;
 	width: 234px;
 	height: 50px;
-	opacity: 0.8;
+	background:#333;
+	opacity:0.6;
+	
 }
 .bannerList span{
 	float: right;
@@ -323,11 +348,12 @@ img{
 	margin-top:5px;
 }
 .bannerList a:hover{
-	background: #1fa7ea;
-	opacity: 1;
+	background:#1fa7ea;
+	opacity:1;
+	
 }
 
-
+//bannerRight
 .bannerRight{
 	width: 80px;
 	height:242px;
@@ -341,7 +367,7 @@ img{
 	display: block;
 	width:80px; 
 	height:80px;
-	background: skyblue;
+	background: #1fa7ea;
 	border-radius: 5px;
 	text-align: center;
 }

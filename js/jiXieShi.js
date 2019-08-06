@@ -7,25 +7,20 @@ function $(str){
 		return document.getElementsByTagName(str);
 	}
 }
-// 轮播图
- // function bannerPlayer(tagname){
- // 	let arr=["bg01.jpg","bg02.jpg","bg03.gif","bg04.jpg","bg05.jpg","bg06.jpg"];
- // 	for(let i=0;i<arr.length;i++){
-	//  	setInterval(function(){
-	// 	tagname.backgroundImage=`url("img/arr[i]")`;
-	//  	},1000)
- // 	}
- // }
- // bannerPlayer($(".bannerCon"))
 
+//点击beforeHeader消失
+$(".icon-shanchu")[0].onclick=function(){
+	this.parentNode().style.display="none";
 
+}
+console.log($(".icon-shanchu"));
 // 一、系列产品下拉框
 
 // 1.获取workList下所有的a标签  获取所有的ul
 let workLists=$(".workList")[0].children;
 // console.log(workLists);
 let uls=$(".productsBox")[0].children;
-// console.log( uls);
+console.log( uls);
 // 2.循环给每个a绑定事件处理函数
 for(let i=1;i<workLists.length-1;i++){
 		// a.鼠标移入，字体变蓝，对应的商品列表出现

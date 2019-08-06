@@ -11,18 +11,16 @@
 	<header>
 		<div class="header">
 			<a id="logo" href="jiXieShi.html"><img src="img/logo-shopping.png"></a>
-			<h2>我的购物车<span id="shoppingNum">0</span></h2>
+			<h2>我的购物车<span id="shoppingNum">1</span></h2>
 			<a class="login" href="jxsLogin.html">登录</a>
 			<span id="sep">|</span>
 			<a class="setup" href="JXScheckIn.html">注册</a>
 		</div>
 	</header>
 	<!-- section -->
+	
 	<section>
-		<div class="car_box">
-			<!-- <div class="kong">
-				
-			</div> -->
+		 <div class="car_box" style="display: none">
 			<div class="listHeader">
 				<p class="tupian">图片</p>
 				<p class="shangpinName">商品名称</p>
@@ -38,12 +36,12 @@
 						<a href="#">机械师空间站 双肩电脑包 太空银</a>
 						<span>赠品:好评 返现10元</span>
 					</div>
-					<div class="danPrice">239</div>
+					<div class="danPrice">239.00</div>
 					<div class="zengjian">
 						<p>
-							<a href="#" title="减少1个数量"><span class="iconfont icon-jian"></span></a>
-							<input type="text">
-							<a href="#"  title="增加1个数量"><span class="iconfont icon-jia"></span></a>
+							<a id="increase" href="#" title="减少1个数量"><span class="iconfont icon-jian"></span></a>
+							<input id="count" value="1" type="text">
+							<a id="decrease" href="#"  title="增加1个数量"><span class="iconfont icon-jia"></span></a>
 						</p>
 					</div>
 					<div class="minSump">
@@ -60,31 +58,144 @@
 			<div class="listFooter">
 				<a class="goShopping" href="jiXieShi.html">继续购物</a>
 				<a class="toPay" href="#">去结算</a>
-				<span id="heji">合计：<b id="totalPrice">2390.00</b></span>
+				<span id="heji">合计：<b id="totalPrice">1195.00</b></span>
 				
 			</div>
 			
+		</div> 
+		<div class="nullCar">
+			<div class="nullImg">
+				
+			</div>
+			<div class="nullWords">
+				<h2>您的购物车还是空的！</h2>
+				<a href="jiXieShi.html">马上去购物</a>
+			</div>
+			
+			
 		</div>
 	</section>
-	<article>
-		<div class="aboutShopping">
+	<article style="display: none">
+		<div class="aboutShopping" >
 			<h2 class="peijianHeader"><span>商品相关配件</span></h2>
-			
-			<dl class="peijianList">
-				<dt></dt>
-				<dd></dd>
-			</dl>
+			<ul id="peijianList">
+				<li>
+					<a id="looklike" href="#"><img src="img/bakage.jpg"></a>
+					<a id="describe">机械师宇航员 双肩背包</a>
+					<span id="price">249</span>
+					<a id="addToCar">放入购物车</a>
+
+				</li>
+
+			</ul>
 		</div>
 		
 	</article>
 	
 	<!-- nav -->
-	<nav>
-		
-	</nav>
+	<div class="end">
+			<ul class="afterSale">
+				<li><a href="#"><span class="iconfont icon-weixiu"></span>整机进口轻薄有型</a></li>
+				<li><a href="#"><span class="iconfont icon-7tian"></span>全国联保极客服务</a></li>
+				<li><a href="#"><span class="iconfont icon-15tian"></span>三仓直发顺丰包邮</a></li>
+				<li><a href="#"><span class="iconfont icon-gifs"></span>智慧交互玩家定制</a></li>
+				<li><a href="#"><span class="iconfont icon-dingwei"></span>130余家售后网点</a></li>
+			</ul>
+			<div class="knowMore">
+				<div class="knowMore1">
+					<dl>
+						<dt>帮助中心</dt>
+						<dd><a href="#">配送方式</a></dd>
+						<dd><a href="#">支付方式</a></dd>
+						<dd><a href="#">购物指南</a></dd>
+					</dl>
+					<dl>
+						<dt>服务支持</dt>
+						<dd><a href="#">保修政策</a></dd>
+						<dd><a href="#">服务标准</a></dd>
+						<dd><a href="#">驱动下载</a></dd>
+					</dl>
+					<dl>
+						<dt>关于机械师</dt>
+						<dd><a href="#">品牌介绍</a></dd>
+						<dd><a href="#">联系我们</a></dd>
+						<dd><a href="#">加入我们</a></dd>
+					</dl>
+					<dl>
+						<dt>品牌咨询</dt>
+						<dd><a href="#">营业执照</a></dd>
+						<dd><a href="#">新闻中心</a></dd>
+						<dd><a href="#">版权声明</a></dd>
+					</dl>
+					<div class="payAttention">
+						<p>官方微博</p>
+						<a href="#"><img src="img/guanwei.png"></a>
+					</div>
+					<div class="payAttention">
+						<p>微信公众号</p>
+						<a href="#"><img src="img/gongzhonghao.png"></a>
+					</div>
+					<div class="payAttention">
+						<p>机械师抖音</p>
+						<a href="#"><img src="img/douying.png"></a>
+					</div>
+					<div class="focusOn">
+						<a href="#"><img src="img/qqkongjian.png"></a>
+						<a href="#"><img src="img/tieba.png"></a>
+					</div>
+				</div>
+				<div class="knowMore2">
+					<p>售后服务热线</p>
+					<h3>4006 999 999</h3>
+					<p class="alwaysOnline">7*24小时在线</p>
+					<p></p>
+					<p>产品咨询电话</p>
+					<h3>18561835934</h3>
+					<p>周一至周六9:00-18:00</p>
+				</div>
+			</div>
+	</div>
 	<!-- footer -->
 	<footer>
-		
+	<div class="foot">
+		<div class="footer">
+			<div class="footerUp">
+				<p>
+					<a href="#">机械师论坛</a>
+					<a href="#">神游网</a>
+					<a href="#">优易网</a>
+					<a href="#">以旧换新</a>
+				</p>
+				<p>© 2014-2019 www.machenike.com  机械师  版权所有 全国免费咨询电话：4006 999 999 鲁ICP备14032650号-1</p>
+			</div>
+			<div class="footerDown">
+				<a href="#"><img src="img/renzheng1.jpg"></a>
+				<a href="#"><img src="img/renzheng2.png"></a>
+				<a href="#"><img 
+					src="img/renzheng3.png"></a>
+				<a href="#"><img src="img/renzheng4.png"></a>
+				<a href="#"><img src="img/renzheng5.png"></a>
+				<a href="#"><img src="img/renzheng6.png"></a>
+			</div>
+			
+		</div>
+	</div>
 	</footer>
+	<div class="bannerRight">
+			 	<a href="#">
+			 		<img src="img/syyxh.png" >
+			 		<span>神游游戏盒</span>
+			 	</a>
+			 	<a href="#">
+			 		<img src="img/sydj.png" >
+			 		<span>神游电竞</span>
+			 		<img class="sydj_ma" src="img/sydj_ma.png">
+			 	</a>
+			 	<a href="#">
+			 		<img src="img/kefu.png" >
+			 		<span>在线客服</span>
+			 	</a>
+	</div>
 </body>
 </html>
+<script type="text/javascript" src="js/gouWuChe.js"></script>
