@@ -1,0 +1,337 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,hr,input,td,select,textarea{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+	color: black;
+	}
+ul,ol{
+	list-style: none;
+}
+img{
+	border:none;
+}
+
+//header
+
+header{
+	width:100%;
+	height:102px;
+	background:white;
+	border-bottom: 2px solid #1fa7ea;
+	.header{
+ 	width:1226px;
+ 	height:55px;
+ 	margin:0 auto;
+ 	padding-top:26px;
+
+ 	#logo{
+ 		float:left;
+	 	width:93px;
+	 	height:55px;
+	 	img{
+		 	width:55px;
+		 	height:55px;
+		 	float:left;
+		 }
+ 	}
+ 	
+  	h2{
+	  	width:167px;
+	  	height:48px;
+	  	float:left;
+	  	line-height:48px;
+		font-size:28px;
+		color:#424242;
+
+		#shoppingNum{
+			float:right;
+			width:17px;
+			height:38px;
+			margin-left:10px;
+			font-size:28px;
+			color:#1FA7EA;
+		}
+	}
+	.login,.setup{	
+		float:right;
+		width:26px;
+		height:40px;
+		line-height:48px;
+		font-size:12px;
+		padding:0px 5px;
+		color:#757575;
+	}
+	#sep{
+		float:right;
+		width:3px;
+		height:48px;
+		line-height:48px;
+		color:#e0e0e0;
+	}
+
+	}
+}
+
+//section
+
+section{
+	width:100%;
+	background: #f5f5f5;
+	padding-top:38px;
+	padding-bottom:88px;
+	.car_box{
+		width:1226px;
+		background:white;
+		margin:0 auto;
+		.listHeader{
+			width:1174px;
+			height:70px;
+			padding:0 26px;
+			color:#424242;
+			font-size:12px;
+			line-height:70px;
+			p{
+				float:left;
+			}
+			.tupian{
+				width:132px;
+				height:70px;
+			}
+			.shangpinName{
+				width:380px;
+				height:70px;
+			}
+			.danjia{
+				width:165px;
+				height:70px;
+				text-align:center;
+			}
+			.shuliang{
+				width:150px;
+				height:70px;
+				text-align:center;
+			}
+			.xiaoji{
+				width:265px;
+				height:70px;
+				text-align:center;
+			}
+			.caozuo{
+				width:80px;
+				height:70px;
+				text-align:center;
+			}
+		}
+		.listBody{
+			width:1174px;
+			overflow:hidden;
+			padding:15px 26px;
+		    border-top: 1px solid #e0e0e0;
+		    li{
+		    	overflow:hidden;
+			    img{
+			    	width:80px;
+			    	height:80px;
+			    	padding:0 39px 0 13px;
+			    	float:left;
+				}
+				.shoppingName{
+					float:left;
+					width:381px;
+					height:80px;
+					a{
+						color:#424242;
+						font-size:18px;
+						line-height:36px;
+						float:left;
+						width:380px;
+						height:35px;
+						margin:8px 0;
+					}
+					span{
+						color:#757575;
+						font-size:12px
+					}
+				}
+				.danPrice{
+					float:left;
+					width:164px;
+					height:80px;
+					text-align:center;
+					line-height:80px;
+				}
+				.zengjian{
+					float:left;
+					width:150px;
+					height:80px;
+					padding-top:21px;
+	    			p{	
+	    				display:inline-block;
+		    			width:148px;
+		    			height:38px;
+		    			border:1px solid #e0e0e0;
+		    			a{
+							float:left;
+							width:38px;
+							height:38px;
+							font-size:20px;
+							color:#757575;
+							line-height:38px;
+							text-align:center;	
+							transition:all 0.2s;
+						}
+						input{
+							float:left;
+							width:72px;
+							height:38px;
+							line-height:38px;
+						    border-width: 0;
+						    color: #424242;
+						    font-size: 16px;
+						    text-align: center;
+						}
+	    			}
+					
+				}
+				.zengjian a:hover{
+					background:#e0e0e0;
+				}
+				.minSump{
+					float:left;
+					width:265px;
+					height:80px;
+					text-align:center;
+					line-height:80px;
+					color: #ff0036;
+	    			font-size: 16px;
+				}
+				.haddle{
+					float:left;
+					width:80px;
+					height:80px;
+					text-align:center;
+					line-height:80px;
+	    			a{
+		    			width:24px;
+		    			height:24px;
+		    			display:inline-block;
+		    			color: #757575;
+	    				font-size: 16px;
+	    				text-align:center;
+	    				line-height:24px;
+	    				border-radius:50%;
+	    				transition:all 0.2s;
+		    		}
+				}
+				.haddle a:hover{
+					color:white;
+	    			background-color: #e53935;
+				}
+			}
+
+		}
+		.clearCar{
+			width:1226px;
+			height:29px;
+			padding-bottom:50px;
+			a{
+				float:right;
+				width:64px;
+				height:19px;
+				padding:5px 15px;
+				color:#999999;
+				font-size:12px;
+			}
+
+		}
+		.clearCar a:hover{
+			color: #1fa7ea;
+			text-decoration:underline;
+		}
+		.listFooter{
+			width:1226px;
+			height:50px;
+			.goShopping{
+				float:left;
+				width:200px;
+				height:48px;
+				background: #b0b0b0;
+	   			border-color: #b0b0b0;
+	   			font-size:18px;
+	   			color:white;
+	   			text-align:center;
+	   			line-height:48px;
+	   			transition:all 0.3s;
+			}
+
+			#heji{
+				float:right;
+				width:200px;
+				height:48px;
+	   			font-size:12px;
+	   			color:#ff0036;
+	   			text-align:center;
+	   			line-height:48px;
+	   			margin-right:50px;
+	   			#totalPrice{
+	   				font-size:30px;
+	   			}
+			}
+			.toPay{
+				float:right;
+				width:200px;
+				height:48px;
+				background: #ff0036;
+	   			border-color:#ff0036;
+	   			font-size:18px;
+	   			color:white;
+	   			text-align:center;
+	   			line-height:48px;
+	   			
+			}
+			
+		}
+		.listFooter .goShopping:hover{
+				background:#757575;
+		}
+	}
+}
+article{
+			margin:0 auto;
+			width:1226px;
+			height:414px;
+			padding-top:50px;
+	.aboutShopping{
+			.peijianHeader{
+				position:relative;
+				width:1226px;
+				height:50px;
+				border-top: 1px solid #e0e0e0;
+				span{
+					position:absolute;
+					left:372px;
+					top:-20px;
+					display:inline-block;
+					width:482px;
+					height:40px;
+					background:#f5f5f5;
+					text-align:center;
+					line-height:40px;
+					font-size:30px;
+					color:#757575;
+				}
+			}
+			.peijianList{
+				width:1226px;
+				height:314px;
+				background:pink;
+
+			}
+		}
+		
+}

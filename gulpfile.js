@@ -52,5 +52,10 @@ gulp.task("watchall",async ()=>{
 		gulp.src("php/**/*").pipe(gulp.dest("D:\\phpStudy\\WWW\\programJXS\\php"))
 
 	})
+	//监听sql并复制
+	gulp.watch("sql/**/*",async ()=>{
+		gulp.src("sql/**/*").pipe(gulp.dest("D:\\phpStudy\\WWW\\programJXS\\sql"))
+
+	})
 
 })
