@@ -10,17 +10,18 @@ function $(str){
 
 //点击beforeHeader消失
 $(".icon-shanchu")[0].onclick=function(){
-	this.parentNode().style.display="none";
-
+	$(".beforeHead")[0].style.display="none";
 }
-console.log($(".icon-shanchu"));
+$(".deleteImg")[0].onclick=function(){
+	$(".beforeAll")[0].style.display="none";
+}
 // 一、系列产品下拉框
 
 // 1.获取workList下所有的a标签  获取所有的ul
 let workLists=$(".workList")[0].children;
 // console.log(workLists);
 let uls=$(".productsBox")[0].children;
-console.log( uls);
+
 // 2.循环给每个a绑定事件处理函数
 for(let i=1;i<workLists.length-1;i++){
 		// a.鼠标移入，字体变蓝，对应的商品列表出现
@@ -112,3 +113,36 @@ for(let i=0;i< titleRights.length-1;i++){
 
 	
 
+//新闻资讯
+var news=$(".news")[0].children;
+
+var arrNews=["【149元同等价位U盘对比测评，哪个会更...","【福利】美女也爱它，机械师笔记本玩转夏机械师笔记本","炫光微边游戏本，F117-V引领机械师...","嚎哭深渊紧急集合，机械师LOL王者so...","没钱买不起游戏本？手把手教你如何省钱购...","2018英特尔大师挑战赛，机械师新8代战机助你刷新战绩_机械师快报_机械师MACHENIKE官网-正品商城","尖叫时刻！机械师携霸券助燃618年中大促","你好台州！机械师电竞体验店台州店正式开业","冰点降临，机械师暑促狂欢为学生党广派福利","侬好！机械师上海首家线下体验店强势登场","帧英雄帧能赢，购机械师战机赢DOTA2勇士令状"]
+console.log(arrNews.length);
+var currentOrd=0;
+var timer1=null;
+function newsAutoPlay(){
+		if(timer1!=null){
+			return;
+		}
+		 timer1=setInterval(function(){
+		let lastestOrd=currentOrd;
+		for(let i=0;i<5;i++){
+			news[i].children[0].innerHTML=arrNews[currentOrd];
+			currentOrd=currentOrd+1;
+		}
+		currentOrd=lastestOrd+1;
+		if(currentOrd==arrNews.length-4){
+			currentOrd=0;
+		}
+	},3000)
+
+}
+newsAutoPlay();
+
+for(let i=0;i<news.length;i++){
+	news[i].onmouseover=function(){
+		clearInterval(timer1);
+		timer1=null;
+	}
+	news[i].onmouseout=newsAutoPlay;
+}
