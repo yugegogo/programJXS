@@ -113,7 +113,7 @@ function deleteThisRow(){
 }
 //清除购物车
 $("#clearAll").onclick=function(){
-	if(confirm("您确实要把该商品移出购物车吗？")){
+	if(confirm("您确实要把所有商品移出购物车吗？")){
 		$('#shoppingNum').innerHTML="0";
 		this.setAttribute("href","jiXieShi.html");
 	}
@@ -123,9 +123,8 @@ $("#clearAll").onclick=function(){
 function numValue(){
 	var num=0;
 	for(let i=0;i<count.length;i++){
-		num=num+parseInt(count.value);
+		num=num+parseInt(count[i].value);
 	}
-	$('#shoppingNum').innerHTML=num;
+	$('#shoppingNum').innerHTML=''+num;
 	$('#shoppingNum').innerHTML=="0"?show1():show2();//显示空车或购物车
 }
-

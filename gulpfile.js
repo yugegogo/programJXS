@@ -40,11 +40,14 @@ gulp.task("watchall",async ()=>{
 	// 监听js 压缩后复制
 	gulp.watch("js/**/*",async ()=>{
 		gulp.src("js/**/*")
-		.pipe(babel({
+		.pipe(babel(
+		{
 			presets:['es2015']
+		}
 
-		}))
-		.pipe(uglify()).pipe(gulp.dest("D:\\phpStudy\\WWW\\programJXS\\js"))
+			))
+		.pipe(uglify())
+		.pipe(gulp.dest("D:\\phpStudy\\WWW\\programJXS\\js"))
 
 	})
 	// 监听php复制

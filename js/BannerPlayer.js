@@ -128,8 +128,12 @@ class BannerPlayer{
 				float:left;
 				height: 100%;
 				width: 50px;
-				background-color: black;
-				opacity: 0.5;`;
+				background-color: pink;
+				color:red;
+				font-size:50px;
+				text-align:center;
+				opacity: 0.5;`
+		leftDivDom.innerHTML="<";
 		this.arrowBoxDom.appendChild(leftDivDom);
 
 
@@ -138,8 +142,12 @@ class BannerPlayer{
 				float:right;
 				height: 100%;
 				width: 50px;
-				background-color: black;
-				opacity: 0.8;`;
+				background-color: pink;
+				color:red;
+				font-size:50px;
+				text-align:center;
+				opacity: 0.5;`;
+		rightDivDom.innerHTML=">";
 		this.arrowBoxDom.appendChild(rightDivDom);
 	}
 

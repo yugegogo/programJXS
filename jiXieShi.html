@@ -32,9 +32,9 @@
 		</div>
 
 		<div class="headerBarRight">
-			<a href="#">登录</a>
-			<a href="#">注册</a>
-			<a href="#">
+			<a href="jxsLogin.html">登录</a>
+			<a href="JXScheckIn.html">注册</a>
+			<a href="jxsGWC.html">
 				<span class="iconfont icon-gouwuche"></span>
 				购物车
 				<span class="num">(0)</span>
@@ -237,15 +237,7 @@
 	<!-- banner -->
 	<div class="banner" >
 		<div class="bannerCon">
-		</div>
-		<!-- <div class="lunboBox">
-			<img src="bg01.jpg">
-			<img src="bg02.jpg">
-			<img src="bg03.jpg">
-			<img src="bg04.jpg">
-			<img src="bg05.jpg">
-			<img src="bg06.jpg">
-		</div> -->
+		
 		<div class="onbanner">
 			<div class="bannerList">
 				<a href="#">游戏笔记本<span>&gt;</span></a>
@@ -387,6 +379,7 @@
 				<li><a href="#"></a></li>
 			</ul>	
 		
+		</div>
 		</div>	 
 	</div>
 	<!-- nav -->
@@ -999,24 +992,12 @@
 <script type="text/javascript" src="js/BannerPlayer.js"></script>
 <script type="text/javascript">
 	// 轮播图
-// window.onload=function(){
-// 	new BannerPlayer({
-// 		width:1920,
-// 		height:460,
-// 		imgs:["img/bg01.jpg","img/bg02.jpg","img/bg03.gif","img/bg04.jpg","img/bg05.jpg","img/bg06.jpg"],
-// 		timeSpace:2000
-// 	},$(".bannerCon"));
-
-// }
-
-// function $(str){
-// 	if(str.charAt(0)=="#"){
-// 		return document.getElementById(str.substring(1));
-// 	}else if(str.charAt(0)=="."){
-// 		return document.getElementsByClassName(str.substring(1));
-// 	}else{
-// 		return document.getElementsByTagName(str);
-// 	}
-// }
-	
+window.onload=function(){
+	new BannerPlayer({
+		width:1920,
+		height:460,
+		imgs:["img/bg01.jpg","img/bg02.jpg","img/bg03.gif","img/bg04.jpg","img/bg05.jpg","img/bg06.jpg"],
+		timeSpace:2000
+	},$(".bannerCon")[0]);
+}
 </script>
